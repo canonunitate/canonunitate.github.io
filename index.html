@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canon</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+	<a href="index.html"><img src="logo.jpg"></a>
+</div>
+		
+		<ul id="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">Despre</a></li>
+			<li><a href="inst.html">Instrucțiune</a></li>
+			<li><a href="res.html">Resurse utile</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+
+		
+
+
+
+<p id="num"><a id="clicks">0</a></p>
+
+
+
+<script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+
+   <div id="buf">
+    <button type="button" class="btn btn-warning btn-lg" onClick="onClick()">Apasă-mă</button>
+    </div>  
+
+<div id="reset">
+<a href="index.html"><button type="button" class="btn btn-success btn-sm">Reset</button> </a>
+</div>
+
+
+    
+</body>
+</html>
